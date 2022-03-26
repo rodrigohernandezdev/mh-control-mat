@@ -1,7 +1,7 @@
 <mat-drawer-container>
   <mat-drawer mode="side" [opened]="sideBarOpen">
     <!-- <mat-drawer mode="side" opened="true"> -->
-    <app-sidenav></app-sidenav>
+    <app-sidenav (toggleSidebarForMe)="sideBarToggle()"></app-sidenav>
   </mat-drawer>
   <mat-drawer-content>
     <app-header (toggleSidebarForMe)="sideBarToggle()"></app-header>
