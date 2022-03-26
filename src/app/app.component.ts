@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mh-control';
+  sideBarOpen = true;
+  sideBarToggle() {
+    this.sideBarOpen = !this.sideBarOpen;
+  }
 }
