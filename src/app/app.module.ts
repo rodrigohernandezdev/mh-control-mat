@@ -15,6 +15,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from "@angular/material/button";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatTableModule } from "@angular/material/table";
+import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatInputModule } from "@angular/material/input";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { MakeHoldDataComponent } from './views/make-hold-data/make-hold-data.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,8 @@ import { MatButtonModule } from "@angular/material/button";
     MakeHoldComponent,
     HeaderComponent,
     HomeComponent,
-    SidenavComponent
+    SidenavComponent,
+    MakeHoldDataComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,12 @@ import { MatButtonModule } from "@angular/material/button";
     MatIconModule,
     MatDividerModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
